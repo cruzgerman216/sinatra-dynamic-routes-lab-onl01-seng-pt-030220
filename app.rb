@@ -16,7 +16,7 @@ class App < Sinatra::Base
     (1..params[:number]).to_i.each do
       arr << params[:phrase]
     end
-    "#{arr}"
+    arr
   end
 
 end
