@@ -12,7 +12,11 @@ class App < Sinatra::Base
   end
 
   get "/say/:number/:phrase" do
-    str = ""
+    arr = []
+    (1..params[:number]).to_i.map do
+      str << params[:phrase]
+    end
+    str
   end
 
 end
