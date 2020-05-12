@@ -14,7 +14,6 @@ class App < Sinatra::Base
   get "/say/:number/:phrase" do
     arr = []
     (1..params[:number].to_i).each { arr << params["phrase"]}
-
     arr
   end
 
